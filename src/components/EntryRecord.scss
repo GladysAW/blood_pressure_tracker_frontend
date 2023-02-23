@@ -1,0 +1,66 @@
+@import "../partials/_variables.scss";
+
+.record {
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  background-color: $record-background;
+
+  @media only screen and (max-width: 425px) {
+    justify-content: space-around;
+  }
+
+  .icon {
+    font-size: $coloredIconsSize;
+    color: rgb(255, 255, 255);
+    margin: 0.3rem;
+
+    &.date {
+      color: $cal-green;
+    }
+
+    &.time {
+      color: $clock-yellow;
+    }
+
+    &.sys {
+      color: $sys-blue;
+      font-weight: 600;
+    }
+    &.dia {
+      color: $dia-purple;
+      font-weight: 600;
+    }
+
+    &.heart {
+      color: $heart-red;
+    }
+  }
+  .output {
+    font-size: $outputSize;
+    font-weight: 600;
+    color: $output-text;
+    padding: 0.5rem;
+  }
+
+  .action-icons {
+    display: flex;
+    gap: 1rem;
+
+    .icon {
+      font-size: $actionIconsSize;
+      color: #fbfffe;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../partials/_mixin.scss";
+
+.modal-delete {
+  @include ModalTheme;
+
+  .modal-overlay {
+    @include OverlayTheme;
+  }
+
+  .confirmation-request {
+    @include FormTheme;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+
+    div.buttons {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      button {
+        @include buttonTheme(
+          $hoverColor: rgba(252, 26, 18, 0.455),
+          $borderColor: rgba(252, 18, 18, 0.526),
+          $fontSize: 0.9rem,
+          $hoverSize: 0.9rem
+        );
+
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

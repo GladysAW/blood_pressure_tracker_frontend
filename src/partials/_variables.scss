@@ -1,0 +1,18 @@
+$cal-green: #00e497;
+$clock-yellow: #fecd03;
+$sys-blue: #38a2cd;
+$dia-purple: #5767ff;
+$heart-red: #dc1313;
+$record-background: #2d355b;
+$output-text: aliceblue;
+
+//* @link https://utopia.fyi/type/calculator?c=320,28.8,1.2,1240,52.8,1.25,2,6,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+$headerSize: clamp(1.8rem, calc(1.28rem + 2.61vw), 3.3rem);
+$outputSize: clamp(0.8rem, calc(0.59rem + 1.04vw), 1.4rem);
+$coloredIconsSize: clamp(1rem, calc(0.65rem + 1.74vw), 2rem);
+$actionIconsSize: clamp(1.8rem, calc(1.56rem + 1.22vw), 2.5rem);
+$btnSize: clamp(0.9rem, calc(0.8rem + 0.52vw), 1.2rem);
+$btnHoverSize: clamp(0.9rem, calc(0.8rem + 0.52vw), 1.2rem);
+$infoTitleSize: clamp(1.2rem, calc(0.99rem + 1.04vw), 1.8rem);
+$infoTextSize: clamp(0.90rem, calc(0.80rem + 0.52vw), 1.20rem);
+$trackerInfoSectionPadding: clamp(2.00rem, calc(1.65rem + 1.74vw), 3.00rem);

@@ -1,0 +1,46 @@
+@import "../../partials/_mixin.scss";
+
+.modal-update {
+  @include ModalTheme;
+
+  .modal-overlay {
+    @include OverlayTheme;
+  }
+
+  .update-form {
+    @include FormTheme;
+    text-align: left;
+
+    .input-field {
+      @include InputFieldTheme;
+
+      input {
+        @media only screen and (max-width: 360px) and (min-width: 320px) {
+          width: 16rem;
+        }
+      }
+    }
+    div.action-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 20rem;
+      @media only screen and (max-width: 360px) and (min-width: 320px) {
+        width: 16rem;
+      }
+
+      button {
+        @include buttonTheme(
+          $hoverColor: rgba(123, 252, 18, 0.4),
+          $borderColor: rgba(61, 252, 18, 0.4),
+          $fontSize: 0.9rem,
+          $hoverSize: 0.9rem
+        );
+
+        @media only screen and (max-width: 360px) and (min-width: 320px) {
+          font-size: 0.7rem;
+        }
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

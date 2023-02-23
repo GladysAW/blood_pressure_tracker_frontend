@@ -1,0 +1,63 @@
+@import "../../partials/_variables.scss";
+
+.section {
+  color: $output-text;
+  background-color: $record-background;
+  margin: 2rem;
+  padding: $trackerInfoSectionPadding;
+  border-radius: 0.8rem;
+  max-width: 95%;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  & > *:not(:first-child) {
+    font-size: $infoTextSize;
+  }
+
+  & h2 {
+    font-size: $infoTitleSize;
+    color: $cal-green;
+  }
+
+  & p {
+    line-height: 1.6rem;
+    text-align: justify;
+
+    & ol li {
+      list-style-type: decimal;
+      margin-left: 1.4rem;
+    }
+  }
+
+  .data-table {
+    color: $output-text;
+
+    table {
+      width: 100%;
+      background-color: $record-background;
+      border-collapse: collapse;
+      border-width: 0.2rem;
+      border-color: $sys-blue;
+      border-style: solid;
+
+      @media only screen and (max-width: 400px) {
+        font-size: 0.8rem;
+      }
+      @media only screen and (max-width: 370px) {
+        font-size: 0.6rem;
+      }
+      td,
+      th {
+        border-width: 2px;
+        border-color: $sys-blue;
+        border-style: solid;
+        padding: 0.5rem;
+        text-align: start;
+      }
+      thead {
+        background-color: $sys-blue;
+      }
+    }
+  }
+}

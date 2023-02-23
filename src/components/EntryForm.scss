@@ -1,0 +1,30 @@
+@import "../partials/_mixin.scss";
+@import "../partials/variables.scss";
+
+.entry-form {
+  // outline: red solid 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem 0;
+  text-align: left;
+
+  .input-field {
+    @include InputFieldTheme;
+
+    input {
+      @media only screen and (max-width: 400px) and (min-width: 320px) {
+        width: 16rem;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    max-width: 100%;
+    padding-top: 1.1rem;
+  }
+}

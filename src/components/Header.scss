@@ -1,0 +1,44 @@
+@import "../partials/_variables.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: $headerSize;
+    text-align: center;
+
+    background: linear-gradient(
+      -45deg,
+      $sys-blue 20%,
+      $clock-yellow 40%,
+      $cal-green 60%,
+      $heart-red 80%
+    );
+    background-size: 300%;
+
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: animated_text 15s ease-in-out infinite;
+    -moz-animation: animated_text 15s ease-in-out infinite;
+    -webkit-animation: animated_text 15s ease-in-out infinite;
+
+    @keyframes animated_text {
+      0% {
+        background-position: 0px 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0px 50%;
+      }
+    }
+  }
+}
