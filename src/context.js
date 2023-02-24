@@ -18,7 +18,9 @@ const DataContextProvider = (props) => {
     setError(null);
 
     try {
-      const response = await axios.get("http://localhost:8000/entries");
+      const response = await axios.get(
+        "https://blood-pressure-tracker-api-mern.onrender.com/entries"
+      );
       setData(response.data.data);
     } catch (error) {
       setError(error);
