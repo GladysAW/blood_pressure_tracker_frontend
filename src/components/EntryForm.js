@@ -24,7 +24,10 @@ const EntryForm = ({ setIsEditing }) => {
   const submitHandler = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:8000/entries", entry);
+      await axios.post(
+        "https://blood-pressure-tracker-api-mern.onrender.com/entries",
+        entry
+      );
     } catch (error) {
       console.log(error);
     } finally {

@@ -16,7 +16,10 @@ const UpdateEntry = ({ selectedEntry, setShowForm }) => {
   const sumbitHandler = async (event) => {
     event.preventDefault();
     try {
-      await axios.put(`http://localhost:8000/entries/${entry._id}`, entry);
+      await axios.put(
+        `https://blood-pressure-tracker-api-mern.onrender.com/entries/${entry._id}`,
+        entry
+      );
     } catch (error) {
       console.log(error);
     } finally {

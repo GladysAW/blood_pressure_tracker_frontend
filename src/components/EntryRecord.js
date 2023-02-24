@@ -19,7 +19,7 @@ const EntryRecord = ({ entry }) => {
 
   const deleteHandler = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/entries/${id}`);
+      await axios.delete(`https://blood-pressure-tracker-api-mern.onrender.com/entries/${id}`);
     } catch (error) {
       console.log(error);
     } finally {
